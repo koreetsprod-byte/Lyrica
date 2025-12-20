@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Удаление облачных данных - Lyrica</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #0a0a0a 0%, #000 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #1c1c1e;
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        h1 {
+            color: #D4AF37;
+            font-size: 32px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            color: #999;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: #fff;
+            font-size: 20px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .step {
+            background: rgba(255, 255, 255, 0.05);
+            border-left: 3px solid #D4AF37;
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+        }
+        
+        .step-number {
+            display: inline-block;
+            background: #D4AF37;
+            color: #000;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 28px;
+            font-weight: bold;
+            margin-right: 12px;
+        }
+        
+        .step-text {
+            color: #e0e0e0;
+            display: inline-block;
+            vertical-align: top;
+            width: calc(100% - 45px);
+        }
+        
+        .email-link {
+            display: inline-block;
+            background: #D4AF37;
+            color: #000;
+            padding: 12px 24px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 10px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .email-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(212, 175, 55, 0.4);
+        }
+        
+        .data-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .data-list li {
+            color: #e0e0e0;
+            padding: 10px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .data-list li:before {
+            content: "•";
+            color: #D4AF37;
+            font-size: 20px;
+            position: absolute;
+            left: 0;
+        }
+        
+        .info-box {
+            background: rgba(33, 150, 243, 0.1);
+            border: 1px solid rgba(33, 150, 243, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        
+        .info-text {
+            color: #90caf9;
+        }
+        
+        .warning {
+            background: rgba(255, 193, 7, 0.1);
+            border: 1px solid rgba(255, 193, 7, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        
+        .warning-text {
+            color: #ffc107;
+            font-weight: 500;
+        }
+        
+        .success-box {
+            background: rgba(76, 175, 80, 0.1);
+            border: 1px solid rgba(76, 175, 80, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        
+        .success-text {
+            color: #81c784;
+        }
+        
+        .language-switch {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        
+        .lang-btn {
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #999;
+            padding: 6px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-left: 8px;
+            transition: all 0.2s;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+        
+        .lang-btn.active {
+            color: #D4AF37;
+            border-color: #D4AF37;
+        }
+        
+        .lang-content {
+            display: none;
+        }
+        
+        .lang-content.active {
+            display: block;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 24px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            .step-text {
+                width: calc(100% - 40px);
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="language-switch">
+            <button class="lang-btn active" onclick="switchLang('ru')">RU</button>
+            <button class="lang-btn" onclick="switchLang('en')">EN</button>
+        </div>
+        
+        <!-- Russian Content -->
+        <div id="content-ru" class="lang-content active">
+            <h1>Lyrica</h1>
+            <p class="subtitle">Удаление облачных данных</p>
+            
+            <div class="section">
+                <h2>Как удалить данные из облака</h2>
+                
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <span class="step-text">Откройте приложение Lyrica на вашем устройстве</span>
+                </div>
+                
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <span class="step-text">Перейдите в раздел "Профиль" (иконка профиля в правом верхнем углу)</span>
+                </div>
+                
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <span class="step-text">Прокрутите вниз до раздела "Облачные данные"</span>
+                </div>
+                
+                <div class="step">
+                    <span class="step-number">4</span>
+                    <span class="step-text">Нажмите на "Удалить облачные данные"</span>
+                </div>
+                
+                <div class="step">
+                    <span class="step-number">5</span>
+                    <span class="step-text">Подтвердите удаление данных из облака</span>
+                </div>
+                
+                <div class="step">
+                    <span class="step-number">6</span>
+                    <span class="step-text">Альтернативно, отправьте запрос на удаление облачных данных по электронной почте:</span>
+                </div>
+                
+                <a href="mailto:iva28app@gmail.com?subject=Запрос на удаление облачных данных Lyrica&body=Здравствуйте,%0D%0A%0D%0AПрошу удалить все мои облачные данные Lyrica (тексты песен, заметки, аудио файлы).%0D%0A%0D%0AАккаунт при этом должен остаться активным.%0D%0A%0D%0AEmail аккаунта: [укажите ваш email]%0D%0A%0D%0AС уважением" class="email-link">
+                    iva28app@gmail.com
+                </a>
+            </div>
+            
+            <div class="section">
+                <h2>Какие данные будут удалены из облака</h2>
+                <ul class="data-list">
+                    <li>Все тексты песен и заметки из облака</li>
+                    <li>Быстрые заметки из облака</li>
+                    <li>Теги из облака</li>
+                    <li>Аудио файлы (голосовые заметки) из облака</li>
+                    <li>Данные синхронизации</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Что сохранится</h2>
+                <div class="success-box">
+                    <p class="success-text">
+                        ✓ Ваш аккаунт останется активным<br>
+                        ✓ Email и профиль пользователя сохранятся<br>
+                        ✓ Локальные данные на устройстве не будут затронуты<br>
+                        ✓ Вы сможете продолжить использование приложения
+                    </p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Сроки обработки запроса</h2>
+                <div class="info-box">
+                    <p class="info-text">
+                        Запрос на удаление облачных данных будет обработан в течение <strong>7 дней</strong> с момента получения. 
+                        После удаления восстановление данных из облака невозможно.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="warning">
+                <p class="warning-text">
+                    ⚠️ <strong>Важно:</strong> После удаления облачных данных вы не сможете синхронизировать данные между устройствами. 
+                    Локальные данные на вашем устройстве останутся нетронутыми.
+                </p>
+            </div>
+        </div>
+        
+        <!-- English Content -->
+        <div id="content-en" class="lang-content">
+            <h1>Lyrica</h1>
+            <p class="subtitle">Cloud Data Deletion</p>
+            
+            <div class="section">
+                <h2>How to Delete Cloud Data</h2>
+                
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <span class="step-text">Open the Lyrica app on your device</span>
+                </div>
+                
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <span class="step-text">Go to the "Profile" section (profile icon in the top right corner)</span>
+                </div>
+                
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <span class="step-text">Scroll down to the "Cloud Data" section</span>
+                </div>
+                
+                <div class="step">
+                    <span class="step-number">4</span>
+                    <span class="step-text">Tap "Delete Cloud Data"</span>
+                </div>
+                
+                <div class="step">
+                    <span class="step-number">5</span>
+                    <span class="step-text">Confirm deletion of cloud data</span>
+                </div>
+                
+                <div class="step">
+                    <span class="step-number">6</span>
+                    <span class="step-text">Alternatively, send a cloud data deletion request by email:</span>
+                </div>
+                
+                <a href="mailto:iva28app@gmail.com?subject=Lyrica Cloud Data Deletion Request&body=Hello,%0D%0A%0D%0AI request to delete all my Lyrica cloud data (song lyrics, notes, audio files).%0D%0A%0D%0AMy account should remain active.%0D%0A%0D%0AAccount email: [enter your email]%0D%0A%0D%0ARegards" class="email-link">
+                    iva28app@gmail.com
+                </a>
+            </div>
+            
+            <div class="section">
+                <h2>What Cloud Data Will Be Deleted</h2>
+                <ul class="data-list">
+                    <li>All song lyrics and notes from cloud</li>
+                    <li>Quick notes from cloud</li>
+                    <li>Tags from cloud</li>
+                    <li>Audio files (voice notes) from cloud</li>
+                    <li>Synchronization data</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>What Will Be Preserved</h2>
+                <div class="success-box">
+                    <p class="success-text">
+                        ✓ Your account will remain active<br>
+                        ✓ Email and user profile will be preserved<br>
+                        ✓ Local data on your device will not be affected<br>
+                        ✓ You can continue using the app
+                    </p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Processing Time</h2>
+                <div class="info-box">
+                    <p class="info-text">
+                        Cloud data deletion requests will be processed within <strong>7 days</strong> of receipt. 
+                        After deletion, cloud data recovery is not possible.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="warning">
+                <p class="warning-text">
+                    ⚠️ <strong>Important:</strong> After deleting cloud data, you will not be able to synchronize data between devices. 
+                    Local data on your device will remain untouched.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function switchLang(lang) {
+            // Hide all content
+            document.querySelectorAll('.lang-content').forEach(el => {
+                el.classList.remove('active');
+            });
+            
+            // Show selected content
+            document.getElementById('content-' + lang).classList.add('active');
+            
+            // Update buttons
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
