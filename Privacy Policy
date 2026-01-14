@@ -38,6 +38,7 @@ When using the App, we may collect the following data:
 – Authentication data: When signing in via Google or Yandex, we receive a user ID and basic profile information (such as name and email) through authentication services
 – User content: Lyrics, notes, tags, and other data created by the user within the App
 – Metadata: Information related to subscriptions and purchases, synchronization settings, and technical logs used to improve the App
+– Anti-fraud technical identifiers (hashed): to prevent abuse of the trial period and protect against fraud, we may process and store a hash of your email and/or a hash of a device identifier. For this purpose, we do not store the “raw” device identifier on our server; only hashed values are used.
 
 We do not collect or store bank card details. Payment information is entered and processed directly by the payment provider in accordance with its own security standards.
 
@@ -50,6 +51,7 @@ User data may be stored using the following services:
 
 5. Personal Data Retention Periods
 Personal data is stored for as long as the user uses the App and/or maintains an account, and until the user deletes the data or the account. Some data may be retained longer if necessary to fulfill legal obligations or to protect the legitimate interests of the operator, such as handling user requests or resolving payment-related issues.
+Hashed anti-fraud identifiers (such as email/device hashes) used to limit trial eligibility and prevent abuse may be retained after account deletion for a reasonable period necessary to achieve these purposes.
 
 
 6. Sharing Data with Third Parties
