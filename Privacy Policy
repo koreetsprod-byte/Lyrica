@@ -53,6 +53,9 @@ User data may be stored using the following services:
 Personal data is stored for as long as the user uses the App and/or maintains an account, and until the user deletes the data or the account. Some data may be retained longer if necessary to fulfill legal obligations or to protect the legitimate interests of the operator, such as handling user requests or resolving payment-related issues.
 Hashed anti-fraud identifiers (such as email/device hashes) used to limit trial eligibility and prevent abuse may be retained after account deletion for a reasonable period necessary to achieve these purposes.
 
+Cloud data retention and automatic deletion:
+If the User has uploaded or synchronized content to the cloud and does not have an active Pro Subscription (including after a trial period or after the paid period ends), the Operator may automatically delete such cloud content after 90 (ninety) days of inactivity/absence of an active Pro Subscription. This does not affect local data stored on the User’s device. Certain billing-related records may be retained longer to comply with legal obligations and to resolve payment-related issues.
+
 
 6. Sharing Data with Third Parties
 We do not sell personal data to third parties. Data may be shared only with service providers necessary for the operation of the App, including:
