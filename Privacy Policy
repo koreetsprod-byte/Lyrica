@@ -1,7 +1,7 @@
 Last updated: December 12, 2025
 
 1. General Provisions
-This Privacy Policy governs the processing and protection of personal data of users of the Lyrica mobile app (hereinafter referred to as the “App”).
+This Privacy Policy governs the processing and protection of personal data of users of the Lyrica mobile app (hereinafter referred to as the "App").
 
 By using the App, you agree to the terms of this Privacy Policy.
 
@@ -17,15 +17,13 @@ The Operator is not a legal entity and processes personal data as part of the de
 2. Grounds and Purposes of Personal Data Processing
 Personal data is processed on the following grounds:
 
-
 – User consent, provided by using the App, registering an account, or using its functionality
-– Necessity to perform and maintain the services provided by the App, including subscription features
+– Necessity to perform and maintain the services provided by the App
 
 Purposes of personal data processing:
 
 – Providing the functionality of the Lyrica mobile app
-– Ensuring the Lyrica+++ subscription and processing payments
-– Synchronizing data between the user’s devices
+– Synchronizing data between the user's devices
 – Providing technical support and improving the App
 – Ensuring security and preventing fraud
 – Complying with applicable legal requirements
@@ -33,35 +31,32 @@ Purposes of personal data processing:
 3. Collected Data
 When using the App, we may collect the following data:
 
-
-
 – Authentication data: When signing in via Google or Yandex, we receive a user ID and basic profile information (such as name and email) through authentication services
 – User content: Lyrics, notes, tags, and other data created by the user within the App
-– Metadata: Information related to subscriptions and purchases, synchronization settings, and technical logs used to improve the App
-– Anti-fraud technical identifiers (hashed): to prevent abuse of the trial period and protect against fraud, we may process and store a hash of your email and/or a hash of a device identifier. For this purpose, we do not store the “raw” device identifier on our server; only hashed values are used.
+– Metadata: Synchronization settings, and technical logs used to improve the App
+– Technical identifiers (hashed): to ensure security and protect against fraud, we may process and store a hash of your email and/or a hash of a device identifier. For this purpose, we do not store the "raw" device identifier on our server; only hashed values are used.
 
-We do not collect or store bank card details. Payment information is entered and processed directly by the payment provider in accordance with its own security standards.
+We do not collect or store bank card details or payment information.
 
 4. Data Storage
 User data may be stored using the following services:
 
 – Authentication and user profile services
 – Cloud storage services for synchronizing lyrics, notes, audio files, and other user data
-– Local storage on the user’s device for caching and offline access
+– Local storage on the user's device for caching and offline access
 
 5. Personal Data Retention Periods
-Personal data is stored for as long as the user uses the App and/or maintains an account, and until the user deletes the data or the account. Some data may be retained longer if necessary to fulfill legal obligations or to protect the legitimate interests of the operator, such as handling user requests or resolving payment-related issues.
-Hashed anti-fraud identifiers (such as email/device hashes) used to limit trial eligibility and prevent abuse may be retained after account deletion for a reasonable period necessary to achieve these purposes.
+Personal data is stored for as long as the user uses the App and/or maintains an account, and until the user deletes the data or the account. Some data may be retained longer if necessary to fulfill legal obligations or to protect the legitimate interests of the operator, such as handling user requests.
 
-Cloud data retention and automatic deletion:
-If the User has uploaded or synchronized content to the cloud and does not have an active Pro Subscription (including after a trial period or after the paid period ends), the Operator may automatically delete such cloud content after 90 (ninety) days of inactivity/absence of an active Pro Subscription. This does not affect local data stored on the User’s device. Certain billing-related records may be retained longer to comply with legal obligations and to resolve payment-related issues.
+Hashed technical identifiers (such as email/device hashes) used to ensure security and prevent abuse may be retained after account deletion for a reasonable period necessary to achieve these purposes.
 
+Cloud data retention:
+User content uploaded or synchronized to the cloud is stored for the entire duration of the user's use of the App. The User may delete cloud data at any time using the App's functionality (if available) or by contacting support. This does not affect local data stored on the User's device.
 
 6. Sharing Data with Third Parties
 We do not sell personal data to third parties. Data may be shared only with service providers necessary for the operation of the App, including:
 
 – Authentication and analytics services
-– Subscription and payment management services (which do not receive the contents of user-generated text or notes)
 – Cloud storage providers used to store and synchronize user data
 
 All such services process data in accordance with their own privacy policies and applicable data protection standards.
@@ -72,7 +67,7 @@ Users have the right to:
 – Receive information about the personal data being processed
 – Access their personal data
 – Request correction of inaccurate or outdated data
-– Delete their data and/or account using the App’s features or by contacting support
+– Delete their data and/or account using the App's features or by contacting support
 – Withdraw consent to data processing (which may limit the availability of certain App features)
 
 Requests related to personal data will be reviewed within a reasonable period. If additional time is required, the user will be informed accordingly.
@@ -82,10 +77,8 @@ To exercise these rights, please contact: iva28app@gmail.com
 8. Data Security
 We implement technical and organizational measures to protect personal data from unauthorized access, modification, disclosure, or destruction. Data transmission is secured using encrypted connections, and access to infrastructure is restricted.
 
-
 9. Changes to the Privacy Policy
 We may update this Privacy Policy from time to time. Significant changes will be communicated through the App or by other appropriate means.
-
 
 10. Contacts
 If you have any questions regarding this Privacy Policy or personal data processing, please contact:
